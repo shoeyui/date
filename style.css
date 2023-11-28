@@ -15,12 +15,10 @@ body {
 }
 
 .gif {
-    max-width: 50vw;
-    max-height: 50vh;
-    width: auto; /* Maintains the aspect ratio of the GIF */
-    height: auto; /* Maintains the aspect ratio of the GIF */
-    margin: auto; /* Centers the GIF horizontally in the container */
-    display: block; /* Ensures the margin auto takes effect */
+    max-width: 50%; /* or any other percentage/value that suits your design */
+    max-height: auto; /* maintains the aspect ratio of the GIF */
+    display: block; /* makes margin auto work for horizontal centering */
+    margin: auto; /* centers the GIF horizontally */
 }
 
 h2 {
