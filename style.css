@@ -5,10 +5,6 @@
     box-sizing: border-box;
 }
 
-.yes-btn-container, .no-btn-container {
-    display: flex;
-}
-
 /* Styling for the body */
 body {
     display: flex;
