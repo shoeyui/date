@@ -8,6 +8,7 @@ const message = document.querySelector(".message");
 yesBtn.addEventListener("click", () => {
   yesBtn.style.visibility = 'hidden';
   noBtn.style.visibility = 'hidden';
+    gif.src = "./pig_shy.gif";
 
   message.innerHTML = "She said yes!"; // Update the message
 });
