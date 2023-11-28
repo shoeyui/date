@@ -8,8 +8,8 @@ const message = document.querySelector(".message");
 yesBtn.addEventListener("click", () => {
   yesBtn.style.visibility = 'hidden';
   noBtn.style.visibility = 'hidden';
-    gif.src = "./pig_shy.gif";
-
+  gif.src = "./pig_shy.gif";
+  question.innerHTML = "YAY mark your calendar for Dec 14!";
   message.innerHTML = "She said yes!"; // Update the message
 });
 
