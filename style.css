@@ -1,0 +1,87 @@
+/* Resetting default browser styles */
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px; /* Base font size */
+}
+
+/* Styling the gif image */
+.gif {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styling the header */
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #e94d58;
+    margin: 15px 0;
+}
+
+/* Styling the button group */
+.btn-group {
+    display: flex;
+    justify-content: space-around; /* Adjusted for better spacing */
+    width: 80%; /* Adjusted width */
+    margin: 50px auto;
+}
+
+/* Styling the buttons */
+button {
+    width: 150px;
+    padding: 10px 20px; /* Adjusted for better button sizing */
+    font-size: 1em;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Adjusted for emphasis */
+    border: none; /* Optional: remove border for a cleaner look */
+    transition: all 0.3s ease; /* Transition for interactive feedback */
+    outline: none; /* Removes the default outline */
+}
+
+/* Styling for the 'Yes' button */
+button.yes-btn {
+    background: #e94d58;
+}
+
+/* Styling for the 'No' button */
+button.no-btn {
+    background: white;
+    color: #e94d58;
+}
+
+/* Hover effects */
+button:hover {
+    transform: scale(1.05); /* Slight increase in size on hover */
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3); /* Deeper shadow on hover */
+}
+
+/* Active state effects */
+button:active {
+    transform: scale(0.95); /* Button presses down on click */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+    .btn-group {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+        width: 100%;
+    }
+
+    button {
+        margin: 10px 0; /* Add margin for stacked buttons */
+    }
+}
