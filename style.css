@@ -6,7 +6,7 @@
 }
 
 .yes-btn-container, .no-btn-container {
-    display: inline-block; /* or 'flex', depending on your layout preference */
+    display: flex;
 }
 
 /* Styling for the body */
