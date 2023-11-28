@@ -18,11 +18,11 @@ noBtn.addEventListener("mouseover", () => {
   let randomX = Math.floor(Math.random() * maxX);
   let randomY = Math.floor(Math.random() * maxY);
 
-  // Adjust the position to ensure the button is fully visible
-  randomX = Math.max(0, randomX);
-  randomY = Math.max(0, randomY);
+  // Ensure the button doesn't go off-screen
+  randomX = Math.max(10, Math.min(randomX, maxX - 10)); // 10px margin
+  randomY = Math.max(10, Math.min(randomY, maxY - 10)); // 10px margin
 
-  noBtn.style.position = "fixed"; // Use fixed positioning
+  noBtn.style.position = "fixed";
   noBtn.style.left = randomX + "px";
   noBtn.style.top = randomY + "px";
 });
