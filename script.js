@@ -6,14 +6,14 @@ const noBtn = document.querySelector(".no-btn");
 const message = document.querySelector(".message");
 
 yesBtn.addEventListener("click", () => {
-  yesBtn.style.display = "none"; // Hide the Yes button
-  noBtn.style.display = "none"; // Hide the No button
+  yesBtn.style.visibility = 'hidden';
+  noBtn.style.visibility = 'hidden';
 
   message.innerHTML = "She said yes!"; // Update the message
 
   // Add the image
   const img = document.createElement("img");
-  img.src = "sus_eyes.jpg"; // Path to your image
+  img.src = "./sus_eyes.jpg"; // Path to your image
   img.alt = "A special picture"; // Alt text for the image
   img.style.maxWidth = "100%"; // Ensure the image is responsive
   document.body.appendChild(img); // Add the image to the body
