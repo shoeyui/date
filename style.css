@@ -56,3 +56,35 @@ button:nth-child(2) {
     background: white;
     color: #e94d58;
 }
+.wrapper {
+    text-align: center; /* centers the content */
+}
+
+.message {
+    font-size: 1.2em;
+    color: #e94d58;
+    margin-top: 10px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-around; /* Use flexbox for button alignment */
+    margin-top: 50px;
+}
+
+button {
+    width: 150px;
+    /* rest of your button styles... */
+    position: relative; /* changed from absolute to relative */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .btn-group {
+        flex-direction: column;
+    }
+
+    button {
+        margin: 10px 0; /* adjust margin for smaller screens */
+    }
+}
