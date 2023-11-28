@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+.yes-btn-container, .no-btn-container {
+    display: inline-block; /* or 'flex', depending on your layout preference */
+}
+
 /* Styling for the body */
 body {
     display: flex;
