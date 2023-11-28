@@ -1,10 +1,11 @@
-*
-{
+/* Resetting default styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Styling for the body */
 body {
     display: flex;
     justify-content: center;
@@ -14,28 +15,43 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.gif {
-    max-width: 50%; /* or any other percentage/value that suits your design */
-    max-height: auto; /* maintains the aspect ratio of the GIF */
-    display: block; /* makes margin auto work for horizontal centering */
-    margin: auto; /* centers the GIF horizontally */
+/* Wrapper styling to center the content */
+.wrapper {
+    text-align: center;
 }
 
+/* Styling for the GIF */
+.gif {
+    max-width: 50%; /* Limits the width of the GIF */
+    max-height: auto; /* Maintains the aspect ratio */
+    display: block; /* Allows horizontal centering */
+    margin: auto; /* Centers the GIF horizontally */
+}
+
+/* Styling for the heading */
 h2 {
     text-align: center;
     font-size: 1.5em;
     color: #e94d58;
     margin: 15px 0;
 }
+
+/* Styling for the message paragraph */
+.message {
+    font-size: 1.2em;
+    color: #e94d58;
+    margin-top: 10px;
+}
+
+/* Styling for the button group */
 .btn-group {
-    width: 100%;
-    height: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around; /* Aligns buttons with space between */
     margin-top: 50px;
 }
+
+/* Styling for buttons */
 button {
-    position: absolute;
     width: 150px;
     height: inherit;
     color: white;
@@ -45,46 +61,23 @@ button {
     cursor: pointer;
     box-shadow: 0 2px 4px gray;
     border: 2px solid #e94d58;
-    font-size: 1.2em;
-}
-button:nth-child(1) {
-    margin-left: -200px;
     background: #e94d58;
+    position: relative; /* Changed to relative */
 }
-button:nth-child(2) {
-    margin-right: -200px;
+
+/* Styling for the "No" button specifically */
+button.no-btn {
     background: white;
     color: #e94d58;
 }
-.wrapper {
-    text-align: center; /* centers the content */
-}
 
-.message {
-    font-size: 1.2em;
-    color: #e94d58;
-    margin-top: 10px;
-}
-
-.btn-group {
-    display: flex;
-    justify-content: space-around; /* Use flexbox for button alignment */
-    margin-top: 50px;
-}
-
-button {
-    width: 150px;
-    /* rest of your button styles... */
-    position: relative; /* changed from absolute to relative */
-}
-
-/* Responsive design */
+/* Responsive design for smaller screens */
 @media (max-width: 600px) {
     .btn-group {
         flex-direction: column;
     }
 
     button {
-        margin: 10px 0; /* adjust margin for smaller screens */
+        margin: 10px 0; /* Adjusts margin for smaller screens */
     }
 }
