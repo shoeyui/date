@@ -15,9 +15,15 @@ noBtn.addEventListener("mouseover", () => {
   const maxX = window.innerWidth - noBtnRect.width;
   const maxY = window.innerHeight - noBtnRect.height;
 
-  const randomX = Math.floor(Math.random() * maxX);
-  const randomY = Math.floor(Math.random() * maxY);
+  let randomX = Math.floor(Math.random() * maxX);
+  let randomY = Math.floor(Math.random() * maxY);
 
+  // Adjust the position to ensure the button is fully visible
+  randomX = Math.max(0, randomX);
+  randomY = Math.max(0, randomY);
+
+  noBtn.style.position = "fixed"; // Use fixed positioning
   noBtn.style.left = randomX + "px";
   noBtn.style.top = randomY + "px";
 });
+
